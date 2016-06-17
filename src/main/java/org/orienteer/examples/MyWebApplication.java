@@ -10,7 +10,8 @@ public class MyWebApplication extends OrienteerWebApplication
 	{
 		super.init();
 		mountPages("org.orienteer.examples.web");
-		registerModule(DataModel.class);
+		registerWidgets("org.orienteer.examples.component.widget");
+		registerModule(PerformanceDataModel.class);
 	}
 	
 }
